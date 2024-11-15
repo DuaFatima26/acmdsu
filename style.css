@@ -1,0 +1,48 @@
+/* universal styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ 
+}
+
+/* styling for background color or body */
+body {
+    background: linear-gradient(135deg, #ff9900, #ffcc00);
+    font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+    color: #333;
+}
+
+
+.welcome{
+    font-family: "Playfair Display", serif;
+}
+
+/* styling for button */
+.btn-yellow-orange {
+    width: 180px;
+    background: linear-gradient(135deg, #FFD700, #FFA500); /* Yellow to Orange gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+
+  .btn-yellow-orange:hover {
+    background: linear-gradient(135deg, #FFA500, #FF8C00); /* Darker orange shade on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    color: #333;
+  }
+
+  .btn-yellow-orange:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+/* styling for button closes here */

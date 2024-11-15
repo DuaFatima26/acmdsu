@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+ 
+  <!-- internal styling for login page -->
+ <style>
+    body {
+      background: linear-gradient(135deg, #ffdf00, #ff6b00);
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .login-container {
+    margin: 5px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+    }
+    h1 {
+      color: #ff6b00;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 80%;
+      padding: 15px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+    }
+    input[type="text"], input[type="password"] {
+      background: #f7f7f7;
+    }
+    .login-btn {
+      background-color: #ff6b00;
+      color: white;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 10px;
+      width: 80%;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .login-btn:hover {
+      background-color: #ffdf00;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      display: none;
+    }
+    .character {
+      margin-top: 48px;
+      position: absolute;
+  
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      transition: bottom 0.3s ease;
+    }
+    @media (max-width: 600px) {
+      .login-container {
+        padding: 20px;
+      }
+    
+      } 
+    
+</style>
+<!-- internal styling closes here -->
+
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h1>Scratch Login</h1>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button class="login-btn" onclick="login()">Login</button>
+    <div class="error" id="error-msg">Invalid Username or Password!</div>
+    <img class="character " id="character" src="./assets/scratch-img1.png" alt="Scratch Character" />
+  </div>
+
+  <!-- <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      var errorMsg = document.getElementById('error-msg');
+      var character = document.getElementById('character');
+      
+      if (username === "admin" && password === "1234") {
+        alert("Login Successful!");
+        // Redirect or show a success message
+      } else {
+        errorMsg.style.display = 'block';
+        character.style.bottom = '0px'; // make character jump when wrong login
+        setTimeout(function() {
+          character.style.bottom = '-50px'; // reset position
+        }, 300);
+      }
+    }
+  </script> -->
+
+</body>
+</html>
